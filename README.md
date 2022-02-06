@@ -1,4 +1,4 @@
-# Main-Web-Idea
+# The Wave
 Big website idea, different themes while scrolling down with animations
 # Currently Simple Website
 
