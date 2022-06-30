@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    background: linear-gradient(to right, #000000, #333333);
+    background: linear-gradient(to right, #159957, #155799);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -30,9 +30,10 @@
 }
 
 #navbar__logo {
-   background-color: #ff8177;
-   background-image: linear-gradient(to top, #c31432 50%, #240b36 100%);
+   background-color: red;
+   background-image: linear-gradient(to top, #ffdcdb 100%, #CB3066 100%);
    background-size: 100%;
+   
    -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -59,10 +60,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 150px;
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
+    
+ 
+  
 }
 
 .navbar__btn {
@@ -86,19 +90,23 @@
     border-radius: 4px;
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #c31432, #240b36);
+    background: linear-gradient(to right, #000046, #1CB5E0);
     color: #fff;
     transition: all 0.3s ease;
+    
 }
 
 body {
-    background-color: grey;
+    background: linear-gradient(to top, #3cd689, #82dde4); 
+    text-decoration: none;
+    background-attachment: fixed;
     }
 
 .navbar__links:hover {
     color: #E3170A;
     transition: all 0.3s ease;
-    background-color: #80262c8e;
+    background-color: #a7000b8e;
+    border-radius: 25px;
 }
 
 @media  screen and (max-width: 960px) {
@@ -124,6 +132,10 @@ body {
         z-index: -1;
         background: #131313;
     }
+
+    .display-inline {
+        display: inline-block;
+      }
 
     .navbar__menu.active {
         background: #131313;
