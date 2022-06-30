@@ -91,6 +91,10 @@
     transition: all 0.3s ease;
 }
 
+body {
+    background-color: bisque;
+    }
+
 .navbar__links:hover {
     color: #E3170A;
     transition: all 0.3s ease;
