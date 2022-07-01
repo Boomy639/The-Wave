@@ -4,6 +4,6 @@ Big website idea, different themes while scrolling down with animations
 
 # https://boomy639.github.io/The-Wave/ #
 
-<span style="color:orange">Work In Progress</span>.
 
-![Website So far](Website.png)
+
+![Website So far](website.png)
