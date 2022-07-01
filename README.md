@@ -6,4 +6,4 @@ Big website idea, different themes while scrolling down with animations
 
 
 
-! [](website.png)
+![](Website.png)
