@@ -103,7 +103,7 @@ body {
     }
 
 .navbar__links:hover {
-    color: #E3170A;
+    color: linear-gradient(to right, #3cd689, #82dde4);
     transition: all 0.3s ease;
     background-color: #a7000b8e;
     border-radius: 25px;
