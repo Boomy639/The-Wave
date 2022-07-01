@@ -103,9 +103,9 @@ body {
     }
 
 .navbar__links:hover {
-    color: linear-gradient(to right, #3cd689, #82dde4);
+    color: rgb(0, 0, 0);
     transition: all 0.3s ease;
-    background-color: #a7000b8e;
+    background-color: rgb(62, 146, 255);
     border-radius: 25px;
 }
 
