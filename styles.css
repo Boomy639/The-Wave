@@ -30,8 +30,8 @@
 }
 
 #navbar__logo {
-   background-color: red;
-   background-image: linear-gradient(to top, #ffdcdb 100%, #CB3066 100%);
+   background-color: rgb(8, 235, 0);
+   background-image: linear-gradient(to right, #00f7ff 50%, #00ff15 25%);
    background-size: 100%;
    
    -webkit-background-clip: text;
@@ -56,7 +56,7 @@
 }
 
 .navbar__links {
-    color:#fff;
+    color:rgb(132, 226, 119);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +91,7 @@
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #000046, #1CB5E0);
-    color: #fff;
+    color: rgb(132, 226, 119);
     transition: all 0.3s ease;
     
 }
