@@ -90,8 +90,8 @@
     border-radius: 4px;
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #000046, #1CB5E0);
-    color: #f8997d;
+    background: linear-gradient(to right, #000046, #2a79c4);
+    color: #ffffff;
     transition: all 0.3s ease;
     
 }
@@ -103,9 +103,9 @@ body {
     }
 
 .navbar__links:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: all 0.3s ease;
-    background-color: rgb(62, 146, 255);
+    background-color: #2a79c4;
     border-radius: 25px;
 }
 
