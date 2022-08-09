@@ -131,7 +131,7 @@ body {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #131313;
+        background: #3888ff;
     }
 
     .display-inline {
@@ -139,7 +139,7 @@ body {
       }
 
     .navbar__menu.active {
-        background: #131313;
+        background: #ef745c;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
