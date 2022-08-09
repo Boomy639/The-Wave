@@ -4,4 +4,5 @@ Big website idea, different themes while scrolling down with animations
 
 # https://boomy639.github.io/The-Wave/ #
 
+![Website Currently!](website.png)
 
