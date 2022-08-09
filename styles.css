@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    background: linear-gradient(to right, #159957, #155799);
+    background: linear-gradient(to right, #ef745c, #34073d);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 
 #navbar__logo {
    background-color: rgb(8, 235, 0);
-   background-image: linear-gradient(to right, #00f7ff 50%, #00ff15 25%);
+   background-image: linear-gradient(to right, #e2db1f 50%, #6ff7e8 25%);
    background-size: 100%;
    
    -webkit-background-clip: text;
@@ -56,7 +56,7 @@
 }
 
 .navbar__links {
-    color:rgb(132, 226, 119);
+    color:#fbe9d7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,13 +91,13 @@
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #000046, #1CB5E0);
-    color: rgb(132, 226, 119);
+    color: #f8997d;
     transition: all 0.3s ease;
     
 }
 
 body {
-    background: linear-gradient(to top, #3cd689, #82dde4); 
+    background: linear-gradient(to top, #fbe9d7); 
     text-decoration: none;
     background-attachment: fixed;
     }
