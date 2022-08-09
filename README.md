@@ -7,3 +7,4 @@ Big website idea, different themes while scrolling down with animations
 
 
 ![Website Currently!](website.png)
+![Website Currently!](navbar.png)
