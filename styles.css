@@ -115,7 +115,7 @@ body {
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
     background-color: #2a79c4;
-    border-radius: 25px;
+    border-radius: 35px;
 }
 
 @media  screen and (max-width: 960px) {
@@ -381,3 +381,4 @@ body {
       }
 }
 
+/* TRYING UNDERLINE HOVER */
