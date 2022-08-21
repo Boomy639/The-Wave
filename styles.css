@@ -88,18 +88,16 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #000046, #2a79c4);
+    background: #3888ff;
     color: #ffffff;
     transition: all 0.3s ease;
     
 }
 
 .button:hover {
-    color: rgb(65, 132, 255);
+    color: rgb(255, 251, 244);
     transition: all 0.3s ease;
-    background-color: #ffffff;
+    background-color: #833ab4;
     border-radius: 25px;
 }
 
