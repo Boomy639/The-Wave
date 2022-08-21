@@ -153,6 +153,7 @@ body {
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
+        border-radius: 25px;
     }
 
     #navbar__logo {
