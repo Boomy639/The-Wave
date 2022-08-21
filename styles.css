@@ -19,8 +19,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
+
 }
 
 .navbar__container {
