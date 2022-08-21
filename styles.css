@@ -7,7 +7,7 @@
 }
 
 .navbar {
-    background: linear-gradient(to right, #ef745c, #34073d);
+    background: linear-gradient(to right, #000000, #34073d);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 
 #navbar__logo {
    background-color: rgb(8, 235, 0);
-   background-image: linear-gradient(to right, #e2db1f 50%, #6ff7e8 25%);
+   background-image: linear-gradient(to right, #544a7d 50%, #f5af19 25%);
    background-size: 100%;
    
    -webkit-background-clip: text;
@@ -96,6 +96,13 @@
     
 }
 
+.button:hover {
+    color: rgb(65, 132, 255);
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
 body {
     background: linear-gradient(to top, #000000); 
     text-decoration: none;
@@ -133,11 +140,13 @@ body {
         z-index: -1;
         background: #3888ff;
     }
+    
 
     .display-inline {
         display: inline-block;
       }
 
+    
     .navbar__menu.active {
         background: #ef745c;
         top: 100%;
@@ -214,6 +223,7 @@ body {
 
 .main {
     background-color: #141414;
+    
 }
 
 .main__container {
@@ -320,6 +330,7 @@ body {
     width: 100%;
     margin: 0 auto;
     height: 90vh;
+    
   } 
 
   .main__content {
@@ -365,3 +376,4 @@ body {
         margin: 2.5rem 0;
       }
 }
+
