@@ -146,7 +146,7 @@ body {
 
     
     .navbar__menu.active {
-        background: #ef745c;
+        background: linear-gradient(to bottom, #000000, #34073d); 
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
