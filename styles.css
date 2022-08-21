@@ -273,6 +273,17 @@ body {
     color: #fff;
 }
 
+.main__content h3 {
+    font-size: 4rem;
+    background-color: #11005f;
+    background-image: linear-gradient(to top, #0059ff 0%, #00fff2 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+}
+
 .main__btn {
     font-size: 1rem;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
