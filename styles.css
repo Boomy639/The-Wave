@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
 }
 
+/* SELECTION HIGHLIGHT THINGY */
+
+
 .navbar {
     background: linear-gradient(to right, #000000, #34073d);
     height: 80px;
