@@ -1,5 +1,5 @@
 #  The Wave #
-created_at	"Date:2022-01-30 Time:19:29:52"
+created at	Date: 2022-01-30 Time 19:29:52"
 
 Original Idea:
 // different themes while scrolling down with animations //
