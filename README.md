@@ -15,7 +15,7 @@ Currently this is the best i can do
 # How I Got Here # 
 
 I used a couple tutorials but most of the ideas are mine.
-The elephant in the room is.... no i did not make the background animation that goes to Bárbara Rodríguez
+
 
 # https://boomy639.github.io/The-Wave/ #
 
