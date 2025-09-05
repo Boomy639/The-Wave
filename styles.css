@@ -45,7 +45,11 @@
     position: sticky;
     top: 0;
     z-index: 999;
-
+    background: rgba(32, 32, 32, 0.65); /* semi-transparent */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,0.18);
 }
 
 .navbar__container {
@@ -79,6 +83,8 @@
     display: flex;
     align-items: center;
     list-style: none;
+    opacity: 0;
+    pointer-events: none;    
 }
 
 .navbar__item {
@@ -94,9 +100,6 @@
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
-    
- 
-  
 }
 
 .navbar__btn {
@@ -138,10 +141,9 @@ body {
     }
 
 .navbar__links:hover {
-    color: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-    background-color: #2a79c4;
-    border-radius: 35px;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);    
 }
 
 @media  screen and (max-width: 960px) {
@@ -153,6 +155,12 @@ body {
         width: 100%;
         max-width: 1300px;
         padding: 0;
+
+    .navbar__links {
+        padding: 1.5rem 0;
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
     }
 
     .navbar__menu {
@@ -166,7 +174,8 @@ body {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #3888ff;
+        transition: all 0.5s cubic-bezier(0.77,0,0.18,1);
+        transform: scaleY(0.95);
     }
     
 
@@ -176,7 +185,6 @@ body {
 
     
     .navbar__menu.active {
-        background: linear-gradient(to bottom, #000000, #34073d); 
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -185,7 +193,20 @@ body {
         font-size: 1.6rem;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
+        background: rgba(32, 32, 32, 0.49); /* More opaque for readability */
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.112);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.18);
+        transform: scaleY(1);
+        opacity: 1;
+        pointer-events: auto;
+        animation: fadeInMenu 0.4s;
     }
+
+    @keyframes fadeInMenu {
+    from { opacity: 0; transform: translateY(-20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
 
     #navbar__logo {
         padding-left: 25px;
