@@ -118,6 +118,113 @@ body {
     width: 100%;
 }
 
+/* Hide navbar when scrolling down */
+.navbar.hide-navbar {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+.navbar {
+    transition: transform 0.3s ease;
+}
+
+/* Theme Switcher Box */
+.theme-switcher {
+    position: fixed;
+    top: 95px;
+    right: 32px;
+    background: rgba(32, 32, 32, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    padding: 1.2rem 1.5rem;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 120px;
+}
+
+.theme-switcher h4 {
+    color: #fff;
+    margin: 0 0 0.7rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.theme-btn {
+    margin: 0.2rem 0;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #21d4fd 0%, #b721ff 100%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+
+.theme-btn:not(:disabled):hover {
+    background: linear-gradient(90deg, #b721ff 0%, #21d4fd 100%);
+    transform: translateY(-2px) scale(1.04);
+    opacity: 1;
+}
+
+.theme-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    z-index: 2;
+}
+.theme-close:hover {
+    opacity: 1;
+}
+.theme-switcher {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    /* ...existing styles... */
+    /* Add this for the close button positioning: */
+    padding-top: 2.2rem;
+}
+
+.theme-open {
+    position: fixed;
+    top: 15px;
+    right: 32px;
+    background: linear-gradient(90deg, #21d4fd 0%, #b721ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 1002;
+    transition: background 0.3s, transform 0.2s;
+    opacity: 0.85;
+}
+.theme-open:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+
 .button,
 #signup-page {
     display: inline-block;
@@ -440,7 +547,7 @@ body {
         font-size: 1.6rem;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
-        background: rgba(32, 32, 32, 0.85);
+        background: rgba(32, 32, 32, 0.595);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.112);
         backdrop-filter: blur(8px);
         border: 1px solid rgba(255,255,255,0.18);
@@ -459,7 +566,7 @@ body {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: #ffffffcb;
         display: block;
         cursor: pointer;
     }
@@ -487,6 +594,25 @@ body {
         padding-bottom: 2rem;
         width: 100%;
     }
+
+        /* Move theme switcher and open button lower on mobile */
+    .theme-switcher,
+    .theme-open {
+        top: 350px;   /* Lower than hamburger menu */
+        right: 16px;
+    }
+
+    /* Optionally, make the theme switcher a bit smaller on mobile */
+    .theme-switcher {
+        min-width: 100px;
+        padding: 2.2rem 1rem 1rem 1rem; /* More top padding for the X button */
+    }
+    .theme-open {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
     
 .button,
 #signup-page {
@@ -500,14 +626,14 @@ body {
     letter-spacing: 1px;
     border: none;
     outline: none;
-    box-shadow: 0 4px 24px rgba(33, 212, 253, 0.15);
+    box-shadow: 0 4px 24px rgba(5, 193, 196, 0.661);
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
     cursor: pointer;
     text-decoration: none;
     margin: 1rem auto;
     text-align: center;
 }
-}
+
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -588,4 +714,111 @@ body {
     .social__media--wrap {
         flex-direction: column;
     }
+}
+
+/* Improved Dark Theme Styles */
+body.dark-theme {
+    background: #181a1b;
+    color: #e0e0e0;
+}
+
+body.dark-theme .navbar,
+body.dark-theme .theme-switcher,
+body.dark-theme .main__container,
+body.dark-theme .github-projects,
+body.dark-theme .footer__container {
+    background: rgba(32, 32, 32, 0.96);
+    color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    backdrop-filter: blur(8px);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+body.dark-theme .navbar__links,
+body.dark-theme .navbar__links:hover,
+body.dark-theme .button,
+body.dark-theme #signup-page {
+    color: #fff;
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+}
+
+body.dark-theme .button:hover,
+body.dark-theme #signup-page:hover {
+    background: linear-gradient(90deg, #414345 0%, #232526 100%);
+}
+
+body.dark-theme .theme-btn {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    opacity: 0.85;
+}
+
+body.dark-theme .theme-btn[aria-label="Dark Theme"] {
+    opacity: 1;
+    cursor: default;
+    filter: brightness(1.2);
+}
+
+body.dark-theme .github-projects {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+body.dark-theme .github-projects a {
+    color: #7ecbff;
+}
+
+body.dark-theme .github-projects a:hover {
+    color: #21d4fd;
+}
+
+body.dark-theme .footer__container {
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+body.dark-theme .footer__link--items > h2,
+body.dark-theme .footer__link--items a,
+body.dark-theme .website__right {
+    color: #e0e0e0;
+}
+
+body.dark-theme .footer__link--items a:hover {
+    color: #21d4fd;
+}
+
+body.dark-theme .social__icon--link {
+    color: #7ecbff;
+}
+
+body.dark-theme .navbar {
+    background: rgba(24, 24, 28, 0.98);
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.45);
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+body.dark-theme .navbar__menu,
+body.dark-theme .navbar__menu.active {
+    background: rgba(32, 32, 36, 0.98);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+body.dark-theme .navbar__links,
+body.dark-theme .navbar__links:hover {
+    color: #e0e0e0;
+    background: none;
+}
+
+body.dark-theme .navbar__links:hover {
+    background: rgba(255,255,255,0.08);
+    color: #21d4fd;
+}
+
+body.dark-theme .navbar__btn .button,
+body.dark-theme .navbar__btn #signup-page {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    border: none;
 }
