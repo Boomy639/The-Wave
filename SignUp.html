@@ -2,11 +2,6 @@
 <html lang="en">
 <head>
     <link rel="icon" type="image/x-icon" href="images/computer.png">
-    <style>
-        body {
-            background: #141414;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,19 +53,16 @@
 </button>
 
 
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h2>Sign Up Page</h2>
-                <p>coming soon</p>
-                
-            </div>
-            <div class="main__img--container">
-                <img src="images/pic3.svg" alt="pic" id="main__img">
-            </div>
-        </div>
-    </div>
-      
+<div class="signup-container">
+    <h2>Sign Up Page</h2>
+    <form id="signup-form" class="signup-form">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <button type="submit" class="button">Sign Up</button>
+    </form>
+    <p id="signup-message"></p>
+</div>
 
     <!--PS3 BACKGROUND STYLE-->
 

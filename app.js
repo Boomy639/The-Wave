@@ -57,3 +57,35 @@ window.addEventListener('DOMContentLoaded', function() {
     themeSwitcher.style.display = 'none';
     themeOpen.style.display = 'flex';
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('signup-form');
+    const message = document.getElementById('signup-message');
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            try {
+                const res = await fetch('https://backend-the-wave.onrender.com', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, email, password })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    message.textContent = data.message;
+                    message.style.color = 'green';
+                    form.reset();
+                } else {
+                    message.textContent = data.message;
+                    message.style.color = 'red';
+                }
+            } catch (err) {
+                message.textContent = 'Server error. Please try again later.';
+                message.style.color = 'red';
+            }
+        });
+    }
+});
