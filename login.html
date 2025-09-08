@@ -2,11 +2,6 @@
 <html lang="en">
 <head>
     <link rel="icon" type="image/x-icon" href="images/computer.png">
-    <style>
-        body {
-            background: #141414;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
+    
     <!-- Nav Bar Section -->
     <nav class="navbar">
         <div class="navbar__container">
@@ -58,29 +56,20 @@
 </button>
 
 
-
-    <!-- Hero Section -->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h3>About Page</h3>
-                <p>Hello, My name is Donfeur, this will be my portfolio. Im a Hobby level developer that just wants to share their projects, or when i get a job, have a place where people can see what i do. It's also just fun to look back on things and see how far you've come in skill.</p>
-            </div>
-            <div class="main__img--container">
-                <img src="images/pic2.svg" alt="pic" id="main__img">
-            </div>
-        </div>
-    </div>
+<div class="signup-container">
+    <h2>Login Page</h2>
+    <form id="login-form" class="signup-form">
+        <input type="email" id="login-email" name="email" placeholder="Email" required>
+        <input type="password" id="login-password" name="password" placeholder="Password" required>
+        <button type="submit" class="button">Login</button>
+    </form>
+    <p id="login-message"></p>
+</div>
 
     <!--PS3 BACKGROUND STYLE-->
 
-
-    <br>
-    <br>
-
-    <script src="app.js"></script>
-<!-- footer section -->
-<div class="footer__container">
+   <!-- footer section -->
+   <div class="footer__container">
     <div class="footer__links">
         <div class="footer__link--wrapper">
             <div class="footer__link--items">
@@ -145,9 +134,11 @@
         </div>
     </div>
 </div>
+<br>
+<script src="app.js"></script>
+
     
 <!-- my shit -->
-
 <div class="area" >
     <ul class="circles">
             <li></li>

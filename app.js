@@ -89,3 +89,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ...existing signup code...
+
+    // Login form handler
+    const loginForm = document.getElementById('login-form');
+    const loginMessage = document.getElementById('login-message');
+    if (loginForm) {
+        loginForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            try {
+                const res = await fetch('https://backend-the-wave.onrender.com/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    loginMessage.textContent = data.message;
+                    loginMessage.style.color = 'green';
+                    loginForm.reset();
+                } else {
+                    loginMessage.textContent = data.message;
+                    loginMessage.style.color = 'red';
+                }
+            } catch (err) {
+                loginMessage.textContent = 'Server error. Please try again later.';
+                loginMessage.style.color = 'red';
+            }
+        });
+    }
+});
