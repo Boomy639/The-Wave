@@ -254,23 +254,26 @@ body {
 
 
 .button,
-#signup-page {
+#signup-page,
+#login-page {
     display: inline-block;
-    padding: 14px 36px;
-    border-radius: 30px;
+    padding: 12px 32px;
+    border-radius: 32px;
     background: linear-gradient(90deg, #21d4fd 0%, #b721ff 100%);
     color: #fff;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     letter-spacing: 1px;
     border: none;
     outline: none;
-    box-shadow: 0 4px 24px rgba(33, 212, 253, 0.15);
+    box-shadow: 0 4px 24px rgba(5, 193, 196, 0.661);
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
     cursor: pointer;
     text-decoration: none;
     margin: 1rem auto;
     text-align: center;
+    min-width: 120px;
+    max-width: 300px;
 }
 
 .button:hover,
@@ -643,10 +646,11 @@ body {
 }
     
 .button,
-#signup-page {
+#signup-page,
+#login-page {
     display: inline-block;
-    padding: 20px 36px;      /* Increased vertical padding */
-    border-radius: 32px;     /* More pill-like */
+    padding: 12px 32px;
+    border-radius: 32px;
     background: linear-gradient(90deg, #21d4fd 0%, #b721ff 100%);
     color: #fff;
     font-weight: 700;
@@ -660,6 +664,8 @@ body {
     text-decoration: none;
     margin: 1rem auto;
     text-align: center;
+    min-width: 120px;
+    max-width: 300px;
 }
 
     #mobile-menu.is-active .bar:nth-child(2) {
